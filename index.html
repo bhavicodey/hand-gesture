@@ -1,3 +1,4 @@
+
  
 <html>
   <head>
@@ -17,51 +18,51 @@
   <div class="container">
   
     <center>
-      <h3 class="btn btn-warning heading"> HAND GESTURE
-        <br>
-        <span>&#9754</span>
-        <span>&#9755</span>
-        <span>&#9756</span>
-        <span>&#9757</span>
-        <span>&#9758</span>
-        <span>&#9759</span>
+      <h3 class="btn btn-warning heading">HAND GESTURE APP!
+      <br>
+      <span>🤙🏼</span>
+      <span>🤞🏿</span>
+      <span>🖖🏻</span>
+      <span>👈🏼</span>
+      <span>👌🏾</span>
+      <span>🙌</span>
       </h3>
+
       <br><br>
 
-      <p style="font-size: 22px;">Take your selfie to find out the hand gesture
+      <p style="font-size: 22px;">Take your selfie to generate hand GESTURE!
       	<br>
-        <b style="color: yellow">👍🏻</b>
+        <b style="color: yellow">👍🏽</b>
         <br>
-        <b style="color: black">👇🏻</b>
+        <b style="color: black">🤘🏻</b>
         <br>
-        <b style="color: red">✊🏻</b>
+        <b style="color: red">✌🏼</b>
         <br>
       </p>
+
       <div class="col-md-4 col-sm-12 col-xs-12">
-        <label> Webcam View - </label>
-        <div id="camera"></div>
-        <br>
-        <br>
-        <button onclick="snap()" class="btn btn-primary">SNAP!</button>
+	      <label>Webcam View - </label>
+	      <div id="camera"></div>
+	      <br><br>
+	      <button onclick="take_snapshot();" class="btn btn-warning">Capture Image</button>
       </div>
 
       <div class="col-md-4 col-sm-12 col-xs-12">
-        <label> Prediction 1 - </label>
-        <p class="name1" id="result1"></p>
-        <p class="emoji1" id="update_emoji1"></p>
-        <label> Prediction 2 - </label>
-        <p class="name2" id="result2"></p>
-        <p class="emoji2" id="update_emoji2"></p>
-      </div>
+	      <label>Prediction 1 - </label>
+	      <p class="emotion_name" id="result_emotion_name"></p>
+	      <p class="emoji" id="update_emoji"></p>
+
+	      <label>Prediction 2 - </label>
+	      <p class="emotion_name" id="result_emotion_name2"></p>
+	      <p class="emoji" id="update_emoji2"></p>
+  	  </div>
 
       <div class="col-md-4 col-sm-12 col-xs-12">
 	      <label>Snapshot - </label>
-        <div id="result"></div>
-
-
-        <br><br>
-        <button onclick="check()" class="btn btn-danger"> Predict Gesture! </button>
-      </div>
+	      <div id="result"></div>
+	      <br><br>
+	      <button onclick="check();" class="btn btn-success">Predict GESTURE</button>
+	     </div>
 
     </center>
 
